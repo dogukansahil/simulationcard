@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simulation Card</title>
+  <style>
+    ::-webkit-scrollbar {
+  width: 10px; 
+  background-color: #000; 
+  }
+::-webkit-scrollbar-thumb {
+  background-color: #00FF00; 
+  border-radius: 10px;
+  }
+    body {
+      background-color: black;
+      color: #00ff00;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-top: 50px;
+      text-align: center;
+    }
+        h2 {
+      font-size: 16px;
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 20px;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .social-link {
+      margin: 0 20px;
+    }
+
+    .social-link a {
+      color: #00ff00;
+      text-decoration: none;
+    }
+
+    .social-link i {
+      font-size: 36px;
+    }
+
+  nav {
+    display: none;
+    justify-content: center;
+  }
+  nav li {
+    display: inline-block;
+  }
+
+    ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+    li {
+  margin: 0 10px;
+}
+
+    a {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 50px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.red-pill {
+  background: #DD1717;
+  background-image: linear-gradient(to right, #DD1717, #DD1717 50%, #FF4949 50%);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(244, 67, 54, 0.4);
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.blue-pill {
+  background: #000249;
+  background-image: linear-gradient(to right, #000249, #000249 50%, #0F4392 50%);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+  </style>
+</head>
+<body>
+  <div class="social-links">
+    <div class="social-link"><a href="#">ZionZone<i class="fab fa-facebook"></i></a></div>
+    <div class="social-link"><a href="#">RedPillWeb<i class="fab fa-twitter"></i></a></div>
+    <div class="social-link"><a href="#">OracleSocial<i class="fab fa-instagram"></i></a></div>
+    <div class="social-link"><a href="#">MindLink<i class="fab fa-github"></i></a></div>
+  </div>
+  <h1>C:\WINDOWS99>title Your System</h1>
+  <h2>C:\WINDOWS99>title Your Reality</h2>
+  <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod tristique libero, vitae ultricies nibh vehicula quis. Nullam aliquam, felis in dogukan interdum, neque leo fermentum mauris, eu consectetur lacus turpis ac nulla. Sed ut nisl quis quam venenatis malesuada. Sed sit amet sahil erat. Wake up, Neo. The Matrix has you. Follow the white rabbit. Nam eu turpis eget nunc tincidunt fringilla. Cras convallis massa vitae augue accumsan, ac egestas elit porttitor. Integer in nisl suscipit, ornare enim vitae, malesuada mi.</p>
+  <nav>
+  <ul>
+    <li><a href="#" class="red-pill">Red Pill</a></li>
+    <li><a href="#" class="blue-pill">Blue Pill</a></li>
+  </ul>
+</nav>
+    <!-- Typewriter effect -->
+  <script>
+    const text = document.getElementById('text').innerHTML;
+    document.getElementById('text').innerHTML = '';
+    let i = 0;
+
+    function writeText() {
+      document.getElementById('text').innerHTML += text.charAt(i);
+      i++;
+      if (i < text.length) {
+        setTimeout(writeText, 5);
+      }
+    }
+    writeText();
+  </script>
+    <!-- Black and gray effect -->
+  <div id="loader"></div>
+<script>
+  let count = 0;
+  const totalLoops = 5;
+  const loopInterval = setInterval(() => {
+    document.body.style.backgroundColor = count % 2 === 0 ? 'black' : '#2f2f2f';
+    document.getElementById('loader').style.display = 'none';
+    count++;
+    if (count === totalLoops * 2) {
+      clearInterval(loopInterval);
+      document.body.style.backgroundColor = 'black';
+    }
+  }, 150);
+</script>
+    <!-- Phill effect -->
+<script>
+  setTimeout(function() {
+    var navElement = document.querySelector('nav');
+    navElement.style.display = 'flex';
+  }, 2000);
+</script>
+</body>
+</html>
